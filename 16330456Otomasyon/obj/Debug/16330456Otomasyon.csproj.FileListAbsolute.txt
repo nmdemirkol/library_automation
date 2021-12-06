@@ -1,0 +1,101 @@
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\ApplicationInsights.config
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\roslyn\csc.exe
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\roslyn\System.Collections.Immutable.dll
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\roslyn\System.Reflection.Metadata.dll
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\roslyn\vbc.exe
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\roslyn\VBCSCompiler.exe
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\roslyn\VBCSCompiler.exe.config
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\16330456Otomasyon.dll.config
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\16330456Otomasyon.dll
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\16330456Otomasyon.pdb
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\EntityFramework.dll
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\EntityFramework.SqlServer.dll
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\Microsoft.AI.DependencyCollector.dll
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\Microsoft.AI.Web.dll
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\Microsoft.AI.WindowsServer.dll
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\Microsoft.ApplicationInsights.dll
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\Microsoft.Web.Infrastructure.dll
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\System.Web.Helpers.dll
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\System.Web.Mvc.dll
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\System.Web.Razor.dll
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\System.Web.Webpages.Deployment.dll
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\System.Web.Webpages.dll
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\System.Web.Webpages.Razor.dll
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\EntityFramework.xml
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\EntityFramework.SqlServer.xml
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\Microsoft.AI.DependencyCollector.xml
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\Microsoft.AI.Web.xml
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\Microsoft.AI.WindowsServer.xml
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\Microsoft.ApplicationInsights.xml
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\System.Web.Razor.xml
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\System.Web.Webpages.xml
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\System.Web.Webpages.Deployment.xml
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\System.Web.Webpages.Razor.xml
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\System.Web.Helpers.xml
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\bin\System.Web.Mvc.xml
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\obj\Debug\16330456Otomasyon.dll
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\obj\Debug\16330456Otomasyon.pdb
+C:\Tüm Belgeler\OkulProje\MVC\16330456Otomasyon\16330456Otomasyon\obj\Debug\16330456Otomasyon.csprojResolveAssemblyReference.cache
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\ApplicationInsights.config
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\roslyn\csc.exe
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\roslyn\vbc.exe
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\roslyn\VBCSCompiler.exe
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\16330456Otomasyon.dll.config
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\16330456Otomasyon.dll
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\16330456Otomasyon.pdb
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\EntityFramework.dll
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\EntityFramework.SqlServer.dll
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\Microsoft.AI.Web.dll
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\System.Web.Helpers.dll
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\System.Web.Mvc.dll
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\System.Web.Razor.dll
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\System.Web.Webpages.dll
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\System.Web.Webpages.Razor.dll
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\EntityFramework.xml
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\EntityFramework.SqlServer.xml
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\Microsoft.AI.Web.xml
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\System.Web.Razor.xml
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\System.Web.Webpages.xml
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\System.Web.Webpages.Razor.xml
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\System.Web.Helpers.xml
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\bin\System.Web.Mvc.xml
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\obj\Debug\16330456Otomasyon.csproj.AssemblyReference.cache
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\obj\Debug\16330456Otomasyon.csproj.CoreCompileInputs.cache
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\obj\Debug\16330456Otomasyon.dll
+C:\Users\Nuh\OneDrive\Masaüstü\16330456Otomasyon\16330456Otomasyon\obj\Debug\16330456Otomasyon.pdb

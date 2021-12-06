@@ -1,0 +1,85 @@
+﻿@model _16330456Otomasyon.Models.Kitap
+
+@{
+    ViewBag.Title = "Kitap Detayı";
+}
+
+
+<div>
+    <h4>@Html.DisplayFor(model => model.KitapAdi)</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <div style="width:100%;">
+            <img src="~/Content/Resimler/@Html.DisplayFor(model => model.Resim)" style="margin:10px auto; max-width:50%; display:table;" />
+        </div>
+
+        <dt>
+            Kitabın Yazarı:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KitapYazar)
+        </dd>
+
+        <dt>
+            Kitap ISBN:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KitapISBN)
+        </dd>
+
+        <dt>
+            Açıklaması:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Aciklama)
+        </dd>
+
+        <dt>
+            Yayın Tarihi:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.YayinTarihi)
+        </dd>
+
+        <dt>
+           Ekleme Tarihi:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EklenmeTarihi)
+        </dd>
+
+        <dt>
+            Kitap Adeti:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KitapAdert)
+        </dd>
+
+        <dt>
+            Kitap Kategorisi:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Kategori.Kategori1)
+        </dd>
+
+        <dt>
+            Ekleyen Kullanıcı Adı:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Kullanici.KullaniciAdi)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Düzenle", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Kitap Listesine Dön", "Index")
+</p>

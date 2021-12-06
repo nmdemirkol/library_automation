@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="kutuphaneModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="kutuphaneEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Kategoris" EntityType="kutuphaneModel.Kategori" />
+    <EntitySet Name="Kitaps" EntityType="kutuphaneModel.Kitap" />
+    <EntitySet Name="Kullanicis" EntityType="kutuphaneModel.Kullanici" />
+    <AssociationSet Name="FK_Kitap_ToTable" Association="kutuphaneModel.FK_Kitap_ToTable">
+      <End Role="Kategori" EntitySet="Kategoris" />
+      <End Role="Kitap" EntitySet="Kitaps" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Kitap_ToTable_1" Association="kutuphaneModel.FK_Kitap_ToTable_1">
+      <End Role="Kullanici" EntitySet="Kullanicis" />
+      <End Role="Kitap" EntitySet="Kitaps" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Kategori">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Kategori1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Kitaps" Relationship="kutuphaneModel.FK_Kitap_ToTable" FromRole="Kategori" ToRole="Kitap" />
+  </EntityType>
+  <EntityType Name="Kitap">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KitapAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="KitapYazar" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="KitapISBN" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="KategoriId" Type="Int32" />
+    <Property Name="Aciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="YayinTarihi" Type="DateTime" Precision="3" />
+    <Property Name="EklenmeTarihi" Type="DateTime" Precision="3" />
+    <Property Name="KitapAdert" Type="Int32" />
+    <Property Name="EkleyenKullaniciId" Type="Int32" />
+    <Property Name="Resim" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Kategori" Relationship="kutuphaneModel.FK_Kitap_ToTable" FromRole="Kitap" ToRole="Kategori" />
+    <NavigationProperty Name="Kullanici" Relationship="kutuphaneModel.FK_Kitap_ToTable_1" FromRole="Kitap" ToRole="Kullanici" />
+  </EntityType>
+  <EntityType Name="Kullanici">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KullaniciAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Sifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Kitaps" Relationship="kutuphaneModel.FK_Kitap_ToTable_1" FromRole="Kullanici" ToRole="Kitap" />
+  </EntityType>
+  <Association Name="FK_Kitap_ToTable">
+    <End Type="kutuphaneModel.Kategori" Role="Kategori" Multiplicity="0..1" />
+    <End Type="kutuphaneModel.Kitap" Role="Kitap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kategori">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Kitap">
+        <PropertyRef Name="KategoriId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Kitap_ToTable_1">
+    <End Type="kutuphaneModel.Kullanici" Role="Kullanici" Multiplicity="0..1" />
+    <End Type="kutuphaneModel.Kitap" Role="Kitap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kullanici">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Kitap">
+        <PropertyRef Name="EkleyenKullaniciId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

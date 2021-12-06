@@ -1,0 +1,101 @@
+﻿@model _16330456Otomasyon.Models.Kitap
+
+@{
+    ViewBag.Title = "Kitabı Sil";
+}
+
+
+<h3>Bu Kitabı Silmek İstediğinize Emin misiniz?</h3>
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.KitapAdi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KitapAdi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KitapYazar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KitapYazar)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KitapISBN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KitapISBN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Aciklama)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Aciklama)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.YayinTarihi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.YayinTarihi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EklenmeTarihi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EklenmeTarihi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KitapAdert)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KitapAdert)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Resim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Resim)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Kategori.Kategori1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Kategori.Kategori1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Kullanici.KullaniciAdi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Kullanici.KullaniciAdi)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Sil" class="btn btn-default" /> |
+            @Html.ActionLink("Kitap Listesine Dön", "Index")
+        </div>
+    }
+</div>

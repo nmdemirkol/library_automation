@@ -1,0 +1,114 @@
+﻿@model _16330456Otomasyon.Models.Kitap
+
+@{
+    ViewBag.Title = "Kitap Ekle";
+}
+
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Kitap</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.KitapAdi, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.KitapAdi, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.KitapAdi, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.KitapYazar, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.KitapYazar, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.KitapYazar, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.KitapISBN, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.KitapISBN, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.KitapISBN, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.KategoriId, "KategoriId", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("KategoriId", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.KategoriId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Aciklama, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+               <textarea class = "form-control" name="Aciklama" style="max-width:100%; min-width:100%;"></textarea>
+                @Html.ValidationMessageFor(model => model.Aciklama, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.YayinTarihi, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.YayinTarihi, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.YayinTarihi, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.EklenmeTarihi, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.EklenmeTarihi, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.EklenmeTarihi, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class = "control-label col-md-2"><b>Kitap Adeti</b></div>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.KitapAdert, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.KitapAdert, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.EkleyenKullaniciId, "EkleyenKullaniciId", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+           
+                <select class="form-control" name="EkleyenKullaniciId">
+                    <option value="@Session["KullaniciId"]">@Session["KullaniciAdi"]</option>
+                </select>
+                @Html.ValidationMessageFor(model => model.EkleyenKullaniciId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Resim, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <input class="btn btn-default" type="file" name="Resim" />
+                @Html.ValidationMessageFor(model => model.Resim, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Oluştur" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Kitap Listesinbe Dön", "Index")
+</div>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

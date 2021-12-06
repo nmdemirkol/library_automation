@@ -1,0 +1,23 @@
+﻿@model _16330456Otomasyon.Models.Kategori
+
+@{
+    ViewBag.Title = "Kategori Detayı";
+}
+
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Kategori1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Kategori1)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Düzenle", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Kategori Listesine Dön", "Index")
+</p>

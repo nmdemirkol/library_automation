@@ -1,0 +1,72 @@
+﻿@model IEnumerable<_16330456Otomasyon.Models.Kitap>
+
+@{
+    ViewBag.Title = "Anasayfa";
+}
+
+<div class="row">
+    <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="info-box">
+            <span class="info-box-icon bg-aqua"><i class="fa fa-book"></i></span>
+
+            <div class="info-box-content">
+                <span class="info-box-text">Kistaplar</span>
+                <span class="info-box-number">
+                @{
+                    var sayi = 0;
+                    foreach (var item in Model)
+                    {
+                        sayi++;
+                    }
+
+                }
+                Toplam Kitap Sayısı : @sayi
+                </span>
+                <span class="info-box-text"><a href="@Url.Action("Index","Kitap")">Kitap Listesi</a></span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+    <!-- /.col -->
+    <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="info-box">
+            <span class="info-box-icon bg-green"><i class="fa fa-plus"></i></span>
+
+            <div class="info-box-content">
+                <span class="info-box-text">Hemen Yeni Kitap Ekle</span>
+                <span class="info-box-number"><a href="@Url.Action("Create","Kitap")">Kitap Eke</a></span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+    <!-- /.col -->
+    <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="info-box">
+            <span class="info-box-icon bg-yellow"><i class="fa fa-users"></i></span>
+
+            <div class="info-box-content">
+                <span class="info-box-text">Kullanıcılar</span>
+                <span class="info-box-number"><a href="@Url.Action("Index","Kullanici")">Tüm Kullanıcılar</a></span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+    <!-- /.col -->
+    <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="info-box">
+            <span class="info-box-icon bg-red"><i class="fa fa-th-list" aria-hidden="true"></i></span>
+
+            <div class="info-box-content">
+                <span class="info-box-text">Kategoriler</span>
+                <span class="info-box-number"><a href="@Url.Action("Index","Kategori")">Tüm Kategoriler</a></span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+    <!-- /.col -->
+</div>
+

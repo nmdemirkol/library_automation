@@ -1,0 +1,37 @@
+﻿@model _16330456Otomasyon.Models.Kullanici
+
+@{
+    ViewBag.Title = "Kullanıcıyı Sil";
+}
+
+
+<h3>Kullanıcıyı Silmek İstediğinize Emin misiniz?</h3>
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.KullaniciAdi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KullaniciAdi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sifre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sifre)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Kullanıcıyı Sil" class="btn btn-default" /> |
+            @Html.ActionLink("Kullanıcı Listesine Dön", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="kutuphaneModelStoreContainer" CdmEntityContainer="kutuphaneEntities">
+    <EntitySetMapping Name="Kategoris">
+      <EntityTypeMapping TypeName="kutuphaneModel.Kategori">
+        <MappingFragment StoreEntitySet="Kategori">
+          <ScalarProperty Name="Kategori1" ColumnName="Kategori" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kitaps">
+      <EntityTypeMapping TypeName="kutuphaneModel.Kitap">
+        <MappingFragment StoreEntitySet="Kitap">
+          <ScalarProperty Name="Resim" ColumnName="Resim" />
+          <ScalarProperty Name="EkleyenKullaniciId" ColumnName="EkleyenKullaniciId" />
+          <ScalarProperty Name="KitapAdert" ColumnName="KitapAdert" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+          <ScalarProperty Name="YayinTarihi" ColumnName="YayinTarihi" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="KategoriId" ColumnName="KategoriId" />
+          <ScalarProperty Name="KitapISBN" ColumnName="KitapISBN" />
+          <ScalarProperty Name="KitapYazar" ColumnName="KitapYazar" />
+          <ScalarProperty Name="KitapAdi" ColumnName="KitapAdi" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kullanicis">
+      <EntityTypeMapping TypeName="kutuphaneModel.Kullanici">
+        <MappingFragment StoreEntitySet="Kullanici">
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+          <ScalarProperty Name="KullaniciAdi" ColumnName="KullaniciAdi" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,30 @@
+﻿@model _16330456Otomasyon.Models.Kategori
+
+@{
+    ViewBag.Title = "Kategori Sil";
+}
+
+
+<h3>BU Kategoriyi Silmek İstediğinize Emin misiniz?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Kategori1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Kategori1)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Kategoriyi Sil" class="btn btn-default" /> |
+            @Html.ActionLink("Kategori Listesine Dön", "Index")
+        </div>
+    }
+</div>

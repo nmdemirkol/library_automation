@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="kutuphaneModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Kategori">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Kategori" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Kitap">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="KitapAdi" Type="nvarchar" MaxLength="50" />
+          <Property Name="KitapYazar" Type="nvarchar" MaxLength="50" />
+          <Property Name="KitapISBN" Type="nvarchar" MaxLength="15" />
+          <Property Name="KategoriId" Type="int" />
+          <Property Name="Aciklama" Type="nvarchar(max)" />
+          <Property Name="YayinTarihi" Type="datetime" />
+          <Property Name="EklenmeTarihi" Type="datetime" />
+          <Property Name="KitapAdert" Type="int" />
+          <Property Name="EkleyenKullaniciId" Type="int" />
+          <Property Name="Resim" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Kullanici">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="KullaniciAdi" Type="nvarchar" MaxLength="50" />
+          <Property Name="Sifre" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_Kitap_ToTable">
+          <End Role="Kategori" Type="Self.Kategori" Multiplicity="0..1" />
+          <End Role="Kitap" Type="Self.Kitap" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Kategori">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Kitap">
+              <PropertyRef Name="KategoriId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Kitap_ToTable_1">
+          <End Role="Kullanici" Type="Self.Kullanici" Multiplicity="0..1" />
+          <End Role="Kitap" Type="Self.Kitap" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Kullanici">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Kitap">
+              <PropertyRef Name="EkleyenKullaniciId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="kutuphaneModelStoreContainer">
+          <EntitySet Name="Kategori" EntityType="Self.Kategori" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Kitap" EntityType="Self.Kitap" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Kullanici" EntityType="Self.Kullanici" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Kitap_ToTable" Association="Self.FK_Kitap_ToTable">
+            <End Role="Kategori" EntitySet="Kategori" />
+            <End Role="Kitap" EntitySet="Kitap" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Kitap_ToTable_1" Association="Self.FK_Kitap_ToTable_1">
+            <End Role="Kullanici" EntitySet="Kullanici" />
+            <End Role="Kitap" EntitySet="Kitap" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="kutuphaneModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="kutuphaneEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Kategoris" EntityType="kutuphaneModel.Kategori" />
+          <EntitySet Name="Kitaps" EntityType="kutuphaneModel.Kitap" />
+          <EntitySet Name="Kullanicis" EntityType="kutuphaneModel.Kullanici" />
+          <AssociationSet Name="FK_Kitap_ToTable" Association="kutuphaneModel.FK_Kitap_ToTable">
+            <End Role="Kategori" EntitySet="Kategoris" />
+            <End Role="Kitap" EntitySet="Kitaps" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Kitap_ToTable_1" Association="kutuphaneModel.FK_Kitap_ToTable_1">
+            <End Role="Kullanici" EntitySet="Kullanicis" />
+            <End Role="Kitap" EntitySet="Kitaps" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Kategori">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Kategori1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Kitaps" Relationship="kutuphaneModel.FK_Kitap_ToTable" FromRole="Kategori" ToRole="Kitap" />
+        </EntityType>
+        <EntityType Name="Kitap">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="KitapAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="KitapYazar" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="KitapISBN" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="KategoriId" Type="Int32" />
+          <Property Name="Aciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="YayinTarihi" Type="DateTime" Precision="3" />
+          <Property Name="EklenmeTarihi" Type="DateTime" Precision="3" />
+          <Property Name="KitapAdert" Type="Int32" />
+          <Property Name="EkleyenKullaniciId" Type="Int32" />
+          <Property Name="Resim" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Kategori" Relationship="kutuphaneModel.FK_Kitap_ToTable" FromRole="Kitap" ToRole="Kategori" />
+          <NavigationProperty Name="Kullanici" Relationship="kutuphaneModel.FK_Kitap_ToTable_1" FromRole="Kitap" ToRole="Kullanici" />
+        </EntityType>
+        <EntityType Name="Kullanici">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="KullaniciAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Sifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Kitaps" Relationship="kutuphaneModel.FK_Kitap_ToTable_1" FromRole="Kullanici" ToRole="Kitap" />
+        </EntityType>
+        <Association Name="FK_Kitap_ToTable">
+          <End Type="kutuphaneModel.Kategori" Role="Kategori" Multiplicity="0..1" />
+          <End Type="kutuphaneModel.Kitap" Role="Kitap" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Kategori">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Kitap">
+              <PropertyRef Name="KategoriId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Kitap_ToTable_1">
+          <End Type="kutuphaneModel.Kullanici" Role="Kullanici" Multiplicity="0..1" />
+          <End Type="kutuphaneModel.Kitap" Role="Kitap" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Kullanici">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Kitap">
+              <PropertyRef Name="EkleyenKullaniciId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="kutuphaneModelStoreContainer" CdmEntityContainer="kutuphaneEntities">
+          <EntitySetMapping Name="Kategoris">
+            <EntityTypeMapping TypeName="kutuphaneModel.Kategori">
+              <MappingFragment StoreEntitySet="Kategori">
+                <ScalarProperty Name="Kategori1" ColumnName="Kategori" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Kitaps">
+            <EntityTypeMapping TypeName="kutuphaneModel.Kitap">
+              <MappingFragment StoreEntitySet="Kitap">
+                <ScalarProperty Name="Resim" ColumnName="Resim" />
+                <ScalarProperty Name="EkleyenKullaniciId" ColumnName="EkleyenKullaniciId" />
+                <ScalarProperty Name="KitapAdert" ColumnName="KitapAdert" />
+                <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+                <ScalarProperty Name="YayinTarihi" ColumnName="YayinTarihi" />
+                <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+                <ScalarProperty Name="KategoriId" ColumnName="KategoriId" />
+                <ScalarProperty Name="KitapISBN" ColumnName="KitapISBN" />
+                <ScalarProperty Name="KitapYazar" ColumnName="KitapYazar" />
+                <ScalarProperty Name="KitapAdi" ColumnName="KitapAdi" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Kullanicis">
+            <EntityTypeMapping TypeName="kutuphaneModel.Kullanici">
+              <MappingFragment StoreEntitySet="Kullanici">
+                <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+                <ScalarProperty Name="KullaniciAdi" ColumnName="KullaniciAdi" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
